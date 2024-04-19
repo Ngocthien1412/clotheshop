@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/lib/client/updater.js"></script>
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/index.js"></script>
+</head>
+<body>
+
+<div class="login-container" id="login-page">
+    <h2>Đăng nhập</h2>
+    <form>
+        <input type="text" name="username" placeholder="Tên đăng nhập">
+        <input type="password" name="password" placeholder="Mật khẩu">
+        <button type="submit">Đăng nhập</button>
+        <button type="button" onclick="showRegisterForm()">Đăng ký</button>
+    </form>
+</div>
+
+<div class="register-container" id="register-page" style="display: none;">
+    <h2>Đăng ký</h2>
+    <form>
+        <input type="text" name="newUsername" placeholder="Tên đăng nhập">
+        <input type="password" name="newPassword" placeholder="Mật khẩu">
+        <button type="submit">Đăng ký</button>
+        <button type="button" onclick="showLoginForm()">Quay lại đăng nhập</button>
+    </form>
+</div>
+
+<script>
+    function showRegisterForm() {
+        document.getElementById('login-page').style.display = 'none';
+        document.getElementById('register-page').style.display = 'block';
+    }
+
+    function showLoginForm() {
+        document.getElementById('register-page').style.display = 'none';
+        document.getElementById('login-page').style.display = 'block';
+    }
+</script>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

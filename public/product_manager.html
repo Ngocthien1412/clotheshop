@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/lib/client/updater.js"></script>
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="css/product-manager.css">
+    <script type="module" src="js/index.js"></script>
+</head>
+<body>
+    <h1>Quản lý sản phẩm</h1>
+
+    <!-- Form thêm sản phẩm -->
+    <form id="addProductForm" enctype="multipart/form-data">
+        <h2>Thêm sản phẩm mới</h2>
+        <label for="productName">Tên sản phẩm:</label>
+        <input type="text" id="productName" name="productName" required>
+        <label for="productPrice">Giá sản phẩm:</label>
+        <input type="number" id="productPrice" name="productPrice" required>
+        <label for="productImage">Hình ảnh sản phẩm:</label>
+        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+        <button type="submit">Thêm sản phẩm</button>
+    </form>
+    
+
+    <!-- Danh sách sản phẩm -->
+    <h2>Danh sách sản phẩm</h2>
+    <ul id="productList">
+        <!-- Các sản phẩm sẽ được thêm vào đây bằng JavaScript -->
+    </ul>
+
+    <!-- Form sửa sản phẩm -->
+    <form id="editProductForm" style="display: none;">
+
+        <h2>Sửa sản phẩm</h2>
+        <input type="hidden" id="editProductId" name="editProductId">
+        <label for="editProductName">Tên sản phẩm:</label>
+        <input type="text" id="editProductName" name="editProductName" required>
+        <label for="editProductPrice">Giá sản phẩm:</label>
+        <input type="number" id="editProductPrice" name="editProductPrice" required>
+        <label for="editProductImage">Hình ảnh sản phẩm:</label>
+        <input type="file" id="editProductImage" name="editProductImage" accept="image/*" required>
+        <button type="submit">Lưu</button>
+        <button type="button" onclick="cancelEdit()">Hủy</button>
+    </form>
+
+    <!-- Script để xử lý sự kiện -->
+    <script>
+        function cancelEdit() {
+            document.getElementById("editProductForm").style.display = "none";
+        }
+    </script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

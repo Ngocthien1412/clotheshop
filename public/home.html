@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Trang chủ</title>
+  
+      <!-- Nội dung của trang chính -->
+      <script type="module" src="/lib/client/updater.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/index.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Shop quần áo TwinTee</h1>
+        <img src="images/logo.png" alt="Logo của trang web">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+          <li><a href="index.html">Đăng nhập</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+          <li><a href="product_manager.html">Quản lý sản phẩm</a></li>
+      </ul>
+      <!-- Thanh tìm kiếm -->
+      <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm...">
+          <button onclick="search()">Tìm kiếm</button>
+      </div>
+  </nav>
+  
+    <!-- Sản phẩm -->
+    <section class="products">
+        <div class="product">
+            <h2>Sản phẩm 1</h2>
+            <img src="images/black.png" alt="áo đen">
+            <p>áo thun đen</p>
+            <button>Mua ngay</button>
+            <button><a href="product_detail.html">Chi tiết sản phẩm</a></button>
+        </div>
+        </div>
+        <div class="product">
+            <h2>Sản phẩm 2</h2>
+            <img src="images/brown.png" alt="áo đen">
+            <p>áo thun nâu</p>
+            <button>Mua ngay</button>
+            <button><a href="product_detail.html">Chi tiết sản phẩm</a></button>
+        </div>
+        <div class="product">
+            <h2>Sản phẩm 3</h2>
+            <img src="images/grey.png" alt="áo đen">
+            <p>áo khoác xám</p>
+            <button>Mua ngay</button>
+            <button><a href="product_detail.html">Chi tiết sản phẩm</a></button>
+        </div>
+       
+    </section>
+  
+    <!-- Footer -->
+    <footer>
+        <p>@ngoc thien it@</p>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
