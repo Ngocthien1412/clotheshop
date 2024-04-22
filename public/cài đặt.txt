@@ -1,0 +1,7 @@
+PORT==1930
+# MONGODB=mongodb://localhost:27017/clotheshop
+collection: users,product
+sử dụng vscode để chạy chương trình:
+mở terminal chạy 2 lệnh sau:
+npm update
+npm start
